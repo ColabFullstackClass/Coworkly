@@ -11,3 +11,6 @@ const organizationSchema = mongoose.Schema({
     ref: "User",
   },
 });
+
+const Organization = mongoose.model("Organization", organizationSchema);
+module.exports = Organization;
