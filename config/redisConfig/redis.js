@@ -1,4 +1,3 @@
-const { connect } = require("mongoose");
 const redis = require("redis");
 
 const redisClient = redis.createClient();

@@ -24,16 +24,6 @@ const userSchema = new mongoose.Schema({
     minlength: 8,
   },
 
-  confirmPassword: {
-    type: String,
-    required: [true, "please confirm your password"],
-    validate: {
-      validator: function (el) {
-        el === this.password;
-      },
-      message: "Passwords are not the same",
-    },
-  },
   organization: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Organization",

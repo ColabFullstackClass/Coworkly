@@ -37,6 +37,6 @@ exports.hasKey = async (key) => {
   return (await redisClient.exists(key)) === 1;
 };
 
-export const expire = async (key, seconds) => {
+exports.expire = async (key, seconds) => {
   await redisClient.expire(key, seconds);
 };
