@@ -25,7 +25,7 @@ const userSchema = new mongoose.Schema({
     minlength: 8,
     select: false,
   },
- 
+
   organization: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Organization",
